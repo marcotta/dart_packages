@@ -87,7 +87,9 @@ public class SignInWithAppleAvailablePlugin: NSObject, FlutterPlugin {
                     result("revoked")
                 case .notFound:
                     result("notFound")
-
+                case .transferred:
+                    result("transferred")
+                    
                 default:
                     result(
                         SignInWithAppleError
